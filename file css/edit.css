@@ -1,0 +1,96 @@
+/* تقليل حجم زر Sign up, Sign in */
+/* تخصيص الأزرار الأخرى (Sign up و Sign in) */
+.btn_1, .btn_2 {
+    padding: 6px 14px; /* تقليل الحجم الداخلي */
+    font-size: 14px; /* تصغير حجم الخط */
+    background-color: #218838; /* لون خلفية أزرق */
+    color: white; /* تغيير اللون النصي إلى أبيض */
+    border: none; /* إزالة الحدود */
+    transition: background-color 0.3s ease; /* تأثير عند المرور بالماوس */
+    text-decoration: none; /* إزالة الخط أسفل النص */
+}
+
+/* إضافة تأثير عند مرور الماوس على زر Sign up */
+.btn_1:hover, .btn_2:hover {
+    background-color: #0056b3; /* تغيير اللون عند المرور */
+    color: white; /* تغيير اللون النصي */
+}
+
+/* تخصيص العناصر داخل الأسئلة الشائعة */
+.faq-container .faq-item h3 {
+    font-size: 18px; /* تغيير حجم الخط */
+    color: #0056b3; /* تغيير اللون إلى الأزرق */
+}
+
+.faq-container .faq-item p {
+    font-size: 16px; /* تغيير حجم الخط */
+    color: #555; /* لون نص الفقرة */
+}
+
+/* تعديل زر Internal, External */
+.btn {
+    padding: 4px 10px; /* تقليل الحجم الداخلي */
+    font-size: 14px; /* تصغير حجم الخط */
+    background-color: #343a40; /* لون خلفية أسود */
+    color: white; /* تغيير اللون النصي إلى أبيض */
+
+    transition: background-color 0.3s ease; /* تأثير تدرج اللون */
+}
+
+/* تخصيص لكلمة Home */
+.navbar-brand {
+    background-color: #f8f9fa; /* خلفية فاتحة */
+    color: #007bff; /* اللون الأزرق للنص */
+    padding: 4px 10px; /* مسافة حول النص */
+    border-radius: 5px; /* حواف مدورة */
+
+    padding: 6px 20px; /* نفس الحجم مثل الأزرار الأخرى */
+    font-size: 14px; /* نفس حجم الخط */
+    background-color: #343a40; /* نفس لون الخلفية ولكن أفتح قليلاً */
+    color: white; /* اللون النصي أبيض */
+    border: none; /* إزالة الحدود */
+    transition: background-color 0.3s ease; /* تأثير الانتقال عند مرور الماوس */
+}
+
+/* إضافة تأثير عند مرور الماوس على كلمة Home */
+.navbar-brand:hover {
+    background-color: #007bff; /* خلفية أزرق */
+}
+
+/* تصغير الشريط الأسود */
+.navbar {
+    padding: 0px 0px; /* تقليل المسافة داخل الشريط */
+}
+
+/* تعديل المسافات بين الأزرار */
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* تعديل المسافة بين الأزرار */
+}
+
+.header1 {
+    border-radius: 0;
+}
+
+/* to make the footer the in the last */
+body, html {
+    height: 100%; /* تحديد ارتفاع كامل للصفحة */
+    margin: 0; /* إزالة المسافات الافتراضية */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* تعيين ارتفاع الصفحة بالكامل */
+}
+
+.content {
+    flex-grow: 1; /* يجعل المحتوى ينمو ليشغل المساحة المتبقية */
+}
+
+footer {
+    margin-top: auto; /* يضع الفوتر في أسفل الصفحة */
+}
+
+

@@ -1,0 +1,84 @@
+.main{ flex: 1; 
+    background-color: #fcfcfc;
+  }  
+  
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #fcfcfc;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      overflow-x: hidden;  /* منع التمرير الأفقي */
+  }
+  
+  #head{
+    margin: 100px;
+  }
+  
+  body p{
+    color: #212529;
+  }
+  
+  header h1 {
+    color: #000000;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  header p {
+    color: #555;
+    font-size: 18px;
+  }
+  
+  /* تنسيقات المسارات */
+  .tracks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* signe */
+    margin-top: 20px;
+    margin: auto;
+    color: rgb(15, 45, 128);
+   
+  }
+  
+  .track {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.2s;  /* signe */
+     box-shadow: #000000 0px 7px 15px;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .track:hover {
+    transform: scale(1.05);  /* signe */
+  }
+  
+  .track img, .track i {  /* signe */
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .track h2 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-size: small;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; 
+  }
