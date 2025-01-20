@@ -1,0 +1,122 @@
+/* (*)لي جعل الخصائص على كل الصفحة  */
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; 
+}
+/* لي عمل الخلفية*/
+body {
+  background-color: #192841;
+  text-align: center;
+  color: #fff;
+}
+/* لي ازالة الفراغ بي الةن الغامق في اسفل الصفحة */
+.container-up {
+  padding: 70px;
+}
+/* لي جعل خلفية الجزئ السفلي بيضاء */
+.container-down {
+  padding: 70px;
+  background-color: #fff;
+  color: #000;
+}
+/* لي تغير العنوان الذي يوجد بي اعلى كل صفحة */
+.title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* لي تغير لون و حجم النص الزي يوجد اسفل العنوان */
+.subtitle {
+  font-size: 18px;
+  color: #8e8e8eeb;
+  margin-bottom: 40px;
+}
+/*  لي تنصيق المسافات الخاصة بي الكوت و المسافات بينها*/
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+/* تنصيق الشكل العام لي الكروت و الظلال الخاصة بة */
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 220px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/*  لي تنصيق الخط المستخدم في في كل كرت*/
+.cards a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+/*  لي عمل الحركة عند وضع الماشر بي القرب نت الكروت*/
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+/* لي تنصيق حجم و ابعاد الصور التي توجد داخل الكروت */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+/* لي تغير الخط و حجم الخط و لون الخط المستخدم في الكرت */
+.card-title {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* لي ابعد زر (تعرف على مصار البرمجة ) عن الكروت (لي انزالة لي الاسفل) */
+.button {
+  margin-top: 30px;
+}
+/* لي تغير شكل الزر و لونة و حجمة و اختيار تريق اغير الزر عند وضع الماشر علية */
+.button a {
+  text-decoration: none;
+  background-color: #24355c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;/*عدد الثواني التي يستغرقها تغير لون الزر*/
+}
+/*  لي تغير لون الزر عند وضع الماشر بي القرب من الزر */
+.button a:hover {
+  background-color: #e61111eb;
+}
+
+
+/* تصميم استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+
+/*  شكل اخر قد يستخدم (تجريبي)*/
+
+
+
+/* .card{
+  background: linear-gradient(
+    101deg,
+    rgba(15, 37, 110, 1) 12%,
+    rgba(32, 178, 7, 1) 84%
+  );
+  background-blend-mode: normal;
+  transform: translate(26px, 0px) scale(1.1, 1.1) skew(1deg, 1deg);
+  box-shadow:
+    0px 31px 0px 4px rgba(3, 1, 1, 0.43),
+    0px 0px 0px 0px rgba(71, 69, 43, 0.73);
+} */
